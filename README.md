@@ -1,6 +1,6 @@
 Terraform module to provision an EC2 instance that is running Apache
 
-
+```hcl
 provider = "aws"{
 region = us-east-1
 }
@@ -18,3 +18,4 @@ module "apache" {
 output "public_ip" {
   value = module.apache.public_ip
 }
+```
